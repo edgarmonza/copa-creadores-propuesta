@@ -14,10 +14,6 @@ export default function Footer() {
             <span className="font-display text-sm tracking-[0.2em] text-muted-foreground">
               SPECTRO
             </span>
-            <span className="text-primary text-xs">x</span>
-            <span className="font-display text-sm tracking-[0.2em] text-muted-foreground">
-              MONZALAB
-            </span>
           </motion.div>
 
           <motion.div
@@ -26,7 +22,7 @@ export default function Footer() {
             viewport={{ once: true }}
             className="flex items-center gap-6 text-xs text-muted-foreground"
           >
-            <span>edgar@monzalab.com</span>
+            <span>info@spectroproduction.com</span>
             <span className="text-primary/30">|</span>
             <span>&copy; 2026</span>
           </motion.div>

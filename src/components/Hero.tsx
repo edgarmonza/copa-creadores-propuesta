@@ -26,7 +26,7 @@ export default function Hero() {
       <div className="vignette-overlay absolute inset-0 z-[1]" />
 
       <div className="relative z-10 container mx-auto px-6 text-center">
-        {/* Spectro x Monzalab badge */}
+        {/* Spectro badge */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -35,10 +35,6 @@ export default function Hero() {
         >
           <span className="text-xs font-display tracking-[0.2em] text-muted-foreground">
             SPECTRO
-          </span>
-          <span className="text-primary text-xs">x</span>
-          <span className="text-xs font-display tracking-[0.2em] text-muted-foreground">
-            MONZALAB
           </span>
         </motion.div>
 

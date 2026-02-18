@@ -2,13 +2,10 @@ import { motion } from "framer-motion";
 import SectionLabel from "./SectionLabel";
 import { Film, Code, Zap, Camera, Globe, Bot } from "lucide-react";
 
-const spectroServices = [
+const services = [
   { icon: Film, label: "Docuseries & Documentales" },
   { icon: Camera, label: "Producción audiovisual premium" },
   { icon: Globe, label: "Contenido para Netflix, HBO, FIFA" },
-];
-
-const monzaServices = [
   { icon: Code, label: "Landing pages inmersivas" },
   { icon: Bot, label: "Automatización con agentes de IA" },
   { icon: Zap, label: "Campañas digitales & retargeting" },
@@ -66,66 +63,34 @@ export default function WhoWeAre() {
             <span className="text-gradient-purple">TECNOLOGÍA QUE CONVIERTE</span>
           </h2>
           <p className="font-accent text-lg text-primary-glow/70 max-w-2xl mx-auto">
-            La unión de Spectro y Monzalab crea un equipo que no existe en el mercado
+            Un equipo que no existe en el mercado
           </p>
         </motion.div>
 
-        {/* Two columns: Spectro + Monzalab */}
-        <div className="grid md:grid-cols-2 gap-6 mb-20">
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="bento-card p-8"
-          >
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-2 h-2 rounded-full bg-primary animate-glow-pulse" />
-              <h3 className="font-display text-xl tracking-wider">SPECTRO</h3>
-            </div>
-            <p className="text-sm text-muted-foreground mb-2 font-display tracking-wider">
-              PRODUCCIÓN DE CONTENIDO PREMIUM
-            </p>
-            <p className="text-muted-foreground leading-relaxed mb-8">
-              Capturamos la luz de atletas, visionarios y creadores extraordinarios, transformándola en narrativas cinematográficas que brillarán para siempre.
-            </p>
-            <div className="space-y-4">
-              {spectroServices.map((s) => (
-                <div key={s.label} className="flex items-center gap-3">
-                  <s.icon className="w-4 h-4 text-primary" />
-                  <span className="text-sm text-foreground/80">{s.label}</span>
-                </div>
-              ))}
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="bento-card p-8"
-          >
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-2 h-2 rounded-full bg-primary animate-glow-pulse" />
-              <h3 className="font-display text-xl tracking-wider">MONZALAB</h3>
-            </div>
-            <p className="text-sm text-muted-foreground mb-2 font-display tracking-wider">
-              EXPERIENCIAS DIGITALES DE OTRO NIVEL
-            </p>
-            <p className="text-muted-foreground leading-relaxed mb-8">
-              Desde páginas web inmersivas hasta software con agentes de IA. Construimos la infraestructura digital que convierte atención en ventas.
-            </p>
-            <div className="space-y-4">
-              {monzaServices.map((s) => (
-                <div key={s.label} className="flex items-center gap-3">
-                  <s.icon className="w-4 h-4 text-primary" />
-                  <span className="text-sm text-foreground/80">{s.label}</span>
-                </div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
+        {/* Spectro services */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="bento-card p-8 mb-20 max-w-3xl mx-auto"
+        >
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-2 h-2 rounded-full bg-primary animate-glow-pulse" />
+            <h3 className="font-display text-xl tracking-wider">SPECTRO</h3>
+          </div>
+          <p className="text-muted-foreground leading-relaxed mb-8">
+            Capturamos la luz de atletas, visionarios y creadores extraordinarios, transformándola en narrativas cinematográficas y experiencias digitales que convierten atención en ventas.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-4">
+            {services.map((s) => (
+              <div key={s.label} className="flex items-center gap-3">
+                <s.icon className="w-4 h-4 text-primary" />
+                <span className="text-sm text-foreground/80">{s.label}</span>
+              </div>
+            ))}
+          </div>
+        </motion.div>
 
         {/* Reel video showcase */}
         <motion.div
