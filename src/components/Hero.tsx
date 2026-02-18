@@ -13,7 +13,7 @@ export default function Hero() {
           playsInline
           className="w-full h-full object-cover"
         >
-          <source src="https://spectrolegends.monzalab.com/video/bg-loop.mp4" type="video/mp4" />
+          <source src="/video/bg-loop.mp4" type="video/mp4" />
         </video>
         {/* Dark overlay for readability */}
         <div className="absolute inset-0 bg-background/80" />

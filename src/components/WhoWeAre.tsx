@@ -24,21 +24,21 @@ const projects = [
     subtitle: "Podcast documental + Novela",
     description: "Podcast documental de la vida del goleador histórico y novela actuada. Producción en curso.",
     tags: ["Podcast", "Novela", "Deportes"],
-    image: "/legends/quintero-celebration.jpg",
+    image: "/legends/quintero-comuna13.jpg",
   },
   {
     title: "MI GOL MUNDIALISTA",
     subtitle: "Tito Puchetti x Spectro",
     description: "Todos los jugadores colombianos que han marcado un gol en un mundial. James, Jerry Mina, Quintero.",
     tags: ["Serie", "Mundial 2026", "En desarrollo"],
-    image: "/legends/quintero-madrid.jpg",
+    image: "/legends/quintero-fall.jpg",
   },
   {
     title: "ATLÉTICO NACIONAL",
     subtitle: "80 años de historia",
     description: "Narración de Carlo Ancelotti. Múltiples capítulos contando la historia del club más grande de Colombia.",
     tags: ["Docuserie", "Fútbol", "Premium"],
-    image: "/legends/quintero-legacy.jpg",
+    image: "/legends/quintero-celebration.jpg",
   },
 ];
 
@@ -110,7 +110,7 @@ export default function WhoWeAre() {
               poster="/legends/quintero-hero.jpg"
               className="w-full h-full object-cover"
             >
-              <source src="https://spectrolegends.monzalab.com/video/hero-reel.mp4" type="video/mp4" />
+              <source src="/video/hero-reel.mp4" type="video/mp4" />
             </video>
           </div>
         </motion.div>
