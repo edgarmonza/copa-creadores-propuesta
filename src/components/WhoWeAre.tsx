@@ -17,28 +17,28 @@ const projects = [
     subtitle: "Juan Fernando Quintero",
     description: "Docuserie del goleador histórico del fútbol colombiano. Producción en negociación con Disney.",
     tags: ["Documental", "Deportes", "Disney"],
-    image: "/legends/quintero-hero.jpg",
+    image: "/legends/juanfer-quintero.png",
   },
   {
     title: "DAIRO MORENO",
     subtitle: "Podcast documental + Novela",
     description: "Podcast documental de la vida del goleador histórico y novela actuada. Producción en curso.",
     tags: ["Podcast", "Novela", "Deportes"],
-    image: "/legends/quintero-comuna13.jpg",
+    image: "/legends/Dayro.png",
   },
   {
     title: "MI GOL MUNDIALISTA",
     subtitle: "Tito Puchetti x Spectro",
     description: "Todos los jugadores colombianos que han marcado un gol en un mundial. James, Jerry Mina, Quintero.",
     tags: ["Serie", "Mundial 2026", "En desarrollo"],
-    image: "/legends/quintero-fall.jpg",
+    image: "/legends/Juanfer vs polonia.png",
   },
   {
     title: "ATLÉTICO NACIONAL",
     subtitle: "80 años de historia",
     description: "Narración de Carlo Ancelotti. Múltiples capítulos contando la historia del club más grande de Colombia.",
     tags: ["Docuserie", "Fútbol", "Premium"],
-    image: "/legends/quintero-celebration.jpg",
+    image: "/legends/Nacional.png",
   },
 ];
 
@@ -107,7 +107,7 @@ export default function WhoWeAre() {
             <video
               controls
               playsInline
-              poster="/legends/quintero-hero.jpg"
+              poster="/legends/juanfer-quintero.png"
               className="w-full h-full object-cover"
             >
               <source src="/video/hero-reel.mp4" type="video/mp4" />

@@ -7,7 +7,7 @@ const plans = [
     icon: Rocket,
     name: "FULL STACK PARTNER",
     price: "USD $50,000",
-    description: "Alcance completo. Sin revenue share. Ejecución total.",
+    description: "Socios estratégicos de comunicación. Ejecución total con visión de escalar el formato en LATAM.",
     features: [
       "Landing page inmersiva del evento",
       "Estrategia de contenido (4 momentos clave)",
@@ -19,16 +19,17 @@ const plans = [
       "Branding digital completo del evento",
       "Experiencia de compra temática avanzada",
       "Gestión con portafolio Spectro de atletas",
+      "Comisión sobre marcas y patrocinadores gestionados",
       "Exclusividad como socios de comunicación",
     ],
     highlight: false,
-    revenue: null,
+    revenue: "Comisión por patrocinadores gestionados por Spectro",
   },
   {
     icon: TrendingUp,
     name: "GROWTH PARTNER",
     price: "USD $15,000",
-    description: "Inversión base + participación en el éxito del evento",
+    description: "Inversión base + participación en el éxito. Comprometidos con escalar juntos en LATAM.",
     features: [
       "Landing page del evento",
       "Estrategia de contenido base",
@@ -36,10 +37,11 @@ const plans = [
       "Estrategia de campaña digital",
       "Flujo WhatsApp post-compra",
       "Soporte pre-evento",
+      "Comisión sobre marcas y patrocinadores gestionados",
       "Alineados con el resultado",
     ],
     highlight: false,
-    revenue: "10-15% del revenue de boletería",
+    revenue: "10-15% del revenue de boletería + comisión por patrocinadores gestionados",
   },
 ];
 
@@ -57,12 +59,12 @@ export default function Investment() {
           className="text-center mb-16"
         >
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[0.95] mb-6">
-            DOS FORMAS DE
+            PARTNERS DEL EVENTO
             <br />
-            <span className="text-gradient-purple">TRABAJAR JUNTOS</span>
+            <span className="text-gradient-purple">Y DE LATAM</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
-            Cada opción está diseñada para un nivel diferente de compromiso. Todas entregan resultados. Ustedes eligen la que mejor se ajuste a su visión.
+            No somos proveedores de un evento. Somos los socios comprometidos con llevar este formato a toda Latinoamérica. Dos formas de empezar juntos.
           </p>
         </motion.div>
 
@@ -119,7 +121,7 @@ export default function Investment() {
             *La producción audiovisual está sujeta a la disponibilidad y acceso al talento (jugadores, creadores) que los organizadores faciliten. El ad spend (pauta publicitaria) no está incluido en ningún plan.
           </p>
           <p className="text-sm text-muted-foreground max-w-xl mx-auto">
-            Estamos abiertos a negociación. Esta es una primera propuesta para que vean el nivel de lo que podemos hacer y lo que nos imaginamos juntos.
+            Estamos abiertos a negociación. Esta es una primera propuesta — Bogotá es solo el primer capítulo de algo más grande en toda Latinoamérica.
           </p>
         </motion.div>
 
