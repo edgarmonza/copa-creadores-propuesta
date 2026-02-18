@@ -18,6 +18,7 @@ const plans = [
       "Estrategia de patrocinadores digitales",
       "Branding digital completo del evento",
       "Experiencia de compra temática avanzada",
+      "Gestión con portafolio Spectro de atletas",
       "Exclusividad como socios de comunicación",
     ],
     highlight: false,

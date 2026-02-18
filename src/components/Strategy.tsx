@@ -8,7 +8,7 @@ const contentMoments = [
     phase: "MOMENTO 1",
     title: '"TE CONVOCO"',
     description:
-      "Ronaldinho graba un video convocando jugadores. Cada semana se revela un nuevo fichaje: Asprilla, Roca Sánchez y más. Genera expectativa viral semana a semana.",
+      "Ronaldinho graba un video convocando a su equipo Colombia All Stars. Cada semana se revela un nuevo fichaje de leyendas colombianas. Genera expectativa viral semana a semana.",
     timing: "Semana 1-4",
   },
   {
@@ -42,7 +42,7 @@ const digitalFunnel = [
     icon: ShoppingCart,
     title: "Landing de compra temática",
     description:
-      "Página de aterrizaje del evento con la experiencia Team Futbolistas vs Team Creadores. Diseño inmersivo que dirige al flujo de compra de boletas.",
+      "Página de aterrizaje del evento con la experiencia Selección Creadores vs Colombia All Stars. Diseño inmersivo que dirige al flujo de compra de boletas.",
   },
   {
     icon: MessageCircle,

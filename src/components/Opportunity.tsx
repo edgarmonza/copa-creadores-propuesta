@@ -7,7 +7,7 @@ const highlights = [
   {
     icon: Users,
     title: "25,000+ asistentes",
-    description: "validados en el primer evento. Formato probado con lleno total en El Campín.",
+    description: "Validados en el primer evento. Formato probado con lleno total en El Campín.",
   },
   {
     icon: Tv,
@@ -16,13 +16,13 @@ const highlights = [
   },
   {
     icon: Globe,
-    title: "Alcance global",
-    description: "Presencia en Argentina, México, Chile, Perú, Venezuela y más de 10 países.",
+    title: "Alcance Colombia + LATAM",
+    description: "Audiencia masiva en Colombia y presencia en Argentina, México, Chile, Perú y más.",
   },
   {
     icon: TrendingUp,
     title: "Ronaldinho confirmado",
-    description: "78.2M seguidores. Junto a Puyol, Xavi y los creadores más grandes de LATAM.",
+    description: "78.2M seguidores. La estrella global que lidera el equipo Colombia All Stars.",
   },
 ];
 
@@ -33,13 +33,16 @@ const stats = [
   { value: "500+", label: "Publicaciones" },
 ];
 
-const creators = [
-  { name: "@ronaldinho", followers: "78.2M", range: "18-45" },
-  { name: "@lagranjadelborrego", followers: "61M", range: "7-25+" },
-  { name: "@carles5puyol", followers: "13.8M", range: "18-40+" },
-  { name: "@xavi", followers: "12M", range: "18-40+" },
+const creatorsTeam = [
+  { name: "@westcol", followers: "14M+", range: "14-30" },
   { name: "@zionhwang_", followers: "6M", range: "18-35" },
   { name: "@julianpinillaaa", followers: "5.5M", range: "18-35+" },
+];
+
+const allStarsTeam = [
+  { name: "Ronaldinho", followers: "78.2M", range: "18-45", confirmed: true },
+  { name: "Tino Asprilla", followers: "—", range: "25-50+", confirmed: false },
+  { name: "Dairo Moreno", followers: "—", range: "20-45", confirmed: false },
 ];
 
 export default function Opportunity() {
@@ -56,15 +59,15 @@ export default function Opportunity() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[0.95] mb-6">
-              DOS CONTINENTES
+              CREADORES
               <br />
-              <span className="text-gradient-purple">UNA NOCHE</span>
+              <span className="text-gradient-purple">VS LEYENDAS</span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Un evento internacional de fútbol que combina competencia, entretenimiento y cultura contemporánea en un solo escenario. La Copa de Creadores reúne a creadores de alto alcance, personalidades del fútbol y figuras icónicas.
+              La Selección Colombia de Creadores de Contenido se enfrenta al equipo Colombia All Stars liderado por Ronaldinho, con leyendas del fútbol colombiano. Un evento que cruza entretenimiento, fútbol y cultura digital en un solo escenario.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Con transmisión internacional por ESPN, un estadio emblemático y una narrativa global, el evento está concebido como un espectáculo deportivo de gran escala donde el fútbol se cruza con el entretenimiento moderno.
+              Con transmisión por ESPN, El Campín como sede y una audiencia digital masiva, la Copa de Creadores es el espectáculo deportivo donde el contenido se convierte en boletas vendidas.
             </p>
           </motion.div>
 
@@ -100,37 +103,88 @@ export default function Opportunity() {
           </motion.div>
         </div>
 
-        {/* Creators grid */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="mb-20"
-        >
-          <p className="text-center text-sm text-muted-foreground font-display tracking-wider mb-8">
-            FIGURAS CONFIRMADAS
-          </p>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
-            {creators.map((c, i) => (
-              <motion.div
-                key={c.name}
-                initial={{ opacity: 0, y: 15 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.3, delay: i * 0.05 }}
-                className="bento-card p-4 text-center"
-              >
-                <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center mx-auto mb-3">
-                  <span className="font-display text-xs text-primary">{c.name.charAt(1).toUpperCase()}</span>
-                </div>
-                <p className="text-xs font-display tracking-wider text-foreground/90 mb-1">{c.name}</p>
-                <p className="text-gradient-purple font-display text-sm">{c.followers}</p>
-                <p className="text-[10px] text-muted-foreground mt-1">{c.range} años</p>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
+        {/* Teams grid */}
+        <div className="grid md:grid-cols-2 gap-6 mb-20">
+          {/* Selección Creadores */}
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="bento-card p-6"
+          >
+            <p className="text-center text-sm text-muted-foreground font-display tracking-wider mb-6">
+              SELECCIÓN CREADORES
+            </p>
+            <div className="space-y-3">
+              {creatorsTeam.map((c, i) => (
+                <motion.div
+                  key={c.name}
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: i * 0.05 }}
+                  className="flex items-center justify-between p-3 rounded-lg bg-primary/5 border border-primary/10"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center">
+                      <span className="font-display text-xs text-primary">{c.name.charAt(1).toUpperCase()}</span>
+                    </div>
+                    <div>
+                      <p className="text-sm font-display tracking-wider text-foreground/90">{c.name}</p>
+                      <p className="text-[10px] text-muted-foreground">{c.range} años</p>
+                    </div>
+                  </div>
+                  <p className="text-gradient-purple font-display text-sm">{c.followers}</p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Colombia All Stars */}
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="bento-card p-6"
+          >
+            <p className="text-center text-sm text-muted-foreground font-display tracking-wider mb-6">
+              COLOMBIA ALL STARS
+            </p>
+            <div className="space-y-3">
+              {allStarsTeam.map((c, i) => (
+                <motion.div
+                  key={c.name}
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: i * 0.05 }}
+                  className="flex items-center justify-between p-3 rounded-lg bg-primary/5 border border-primary/10"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center">
+                      <span className="font-display text-xs text-primary">{c.name.charAt(0).toUpperCase()}</span>
+                    </div>
+                    <div>
+                      <p className="text-sm font-display tracking-wider text-foreground/90">{c.name}</p>
+                      <p className="text-[10px] text-muted-foreground">{c.range} años</p>
+                    </div>
+                  </div>
+                  <div className="text-right">
+                    {c.followers !== "—" && <p className="text-gradient-purple font-display text-sm">{c.followers}</p>}
+                    <span className={`text-[10px] font-display tracking-wider ${c.confirmed ? "text-green-400" : "text-primary/50"}`}>
+                      {c.confirmed ? "CONFIRMADO" : "EN GESTIÓN"}
+                    </span>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+            <p className="text-[10px] text-muted-foreground/50 text-center mt-4">
+              Spectro gestiona con su portafolio de atletas para sumar más leyendas
+            </p>
+          </motion.div>
+        </div>
 
         {/* The pain point */}
         <motion.div

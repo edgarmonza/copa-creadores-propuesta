@@ -67,7 +67,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 1 }}
           className="font-display text-2xl sm:text-3xl md:text-4xl tracking-[0.1em] text-muted-foreground mb-8"
         >
-          LATAM <span className="text-gradient-purple">VS</span> EUROPA
+          SELECCIÓN CREADORES <span className="text-gradient-purple">VS</span> COLOMBIA ALL STARS
         </motion.h2>
 
         {/* Event details */}

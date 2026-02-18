@@ -5,11 +5,12 @@ import { Check, X } from "lucide-react";
 const included = [
   "Landing page inmersiva del evento (diseño y desarrollo web)",
   "Estrategia de contenido (calendario editorial y guía de momentos clave)",
-  "Diseño de experiencia de compra temática (Team Futbolistas vs Team Creadores)",
+  "Diseño de experiencia de compra temática (Selección Creadores vs Colombia All Stars)",
   "Estrategia de campaña de retargeting multi-canal (Meta, Google, TikTok)",
   "Flujo automatizado WhatsApp post-compra (confirmación + info del evento)",
   "Reporte consolidado de métricas de campaña para sponsors",
   "Dirección creativa y producción audiovisual (sujeto a acceso al talento)",
+  "Gestión con portafolio Spectro de atletas para sumar jugadores al evento",
   "Asesoría en estrategia de lanzamiento",
   "Soporte y optimización durante la campaña pre-evento",
 ];
@@ -17,7 +18,7 @@ const included = [
 const excluded = [
   "Pauta publicitaria (ad spend) — se cotiza aparte según objetivo",
   "Producción del evento en sí (logística, tarima, sonido, transmisión)",
-  "Negociación de contratos con jugadores o creadores",
+  "Confirmación de jugadores — gestionamos con nuestro portafolio de atletas, pero la participación depende de cada jugador",
   "Manejo continuo de redes sociales del evento (se puede cotizar adicional)",
   "Coordinación de agendas y disponibilidad del talento para filmación",
   "Desarrollo o integración de pasarela de pagos / ticketera",
