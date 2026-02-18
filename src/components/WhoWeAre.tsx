@@ -17,7 +17,7 @@ const projects = [
     subtitle: "Juan Fernando Quintero",
     description: "Docuserie del goleador histórico del fútbol colombiano. Producción en negociación con Disney.",
     tags: ["Documental", "Deportes", "Disney"],
-    image: "/legends/juanfer-quintero.png",
+    image: "/legends/Juanferriver.png",
   },
   {
     title: "DAIRO MORENO",
@@ -107,7 +107,7 @@ export default function WhoWeAre() {
             <video
               controls
               playsInline
-              poster="/legends/juanfer-quintero.png"
+              poster="/legends/Juanferriver.png"
               className="w-full h-full object-cover"
             >
               <source src="/video/hero-reel.mp4" type="video/mp4" />
