@@ -99,18 +99,6 @@ export default function Team() {
           ))}
         </div>
 
-        {/* Quote */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center"
-        >
-          <blockquote className="font-accent text-xl md:text-2xl text-primary-glow/60 max-w-2xl mx-auto">
-            "Que cuando estos manes nos vean, digan: estos hijueputas tienen que ser nuestros socios en comunicación."
-          </blockquote>
-        </motion.div>
       </div>
     </section>
   );

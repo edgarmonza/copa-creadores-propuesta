@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import SectionLabel from "./SectionLabel";
-import { Star, Rocket, TrendingUp } from "lucide-react";
+import { Rocket, TrendingUp } from "lucide-react";
 
 const plans = [
   {
-    icon: Star,
-    name: "CAMPAIGN PARTNER",
-    price: "USD $20,000",
-    description: "Campaña de comunicación digital + dirección de contenido",
+    icon: Rocket,
+    name: "FULL STACK PARTNER",
+    price: "USD $50,000",
+    description: "Alcance completo. Sin revenue share. Ejecución total.",
     features: [
       "Landing page inmersiva del evento",
       "Estrategia de contenido (4 momentos clave)",
@@ -15,32 +15,18 @@ const plans = [
       "Estrategia de campaña de retargeting multi-canal",
       "Flujo automatizado WhatsApp post-compra",
       "Reporte de métricas de campaña",
-      "Soporte durante la campaña pre-evento",
+      "Estrategia de patrocinadores digitales",
+      "Branding digital completo del evento",
+      "Experiencia de compra temática avanzada",
+      "Exclusividad como socios de comunicación",
     ],
     highlight: false,
     revenue: null,
   },
   {
-    icon: Rocket,
-    name: "FULL STACK PARTNER",
-    price: "USD $50,000",
-    description: "Alcance completo. Sin revenue share. Ejecución total.",
-    features: [
-      "Todo lo de Campaign Partner",
-      "Producción de contenido expandida*",
-      "Estrategia de patrocinadores digitales",
-      "Consultoría en escalamiento LATAM",
-      "Branding digital completo del evento",
-      "Experiencia de compra temática avanzada",
-      "Exclusividad como socios de comunicación",
-    ],
-    highlight: true,
-    revenue: null,
-  },
-  {
     icon: TrendingUp,
     name: "GROWTH PARTNER",
-    price: "USD $5,000",
+    price: "USD $15,000",
     description: "Inversión base + participación en el éxito del evento",
     features: [
       "Landing page del evento",
@@ -70,7 +56,7 @@ export default function Investment() {
           className="text-center mb-16"
         >
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[0.95] mb-6">
-            TRES FORMAS DE
+            DOS FORMAS DE
             <br />
             <span className="text-gradient-purple">TRABAJAR JUNTOS</span>
           </h2>
@@ -79,7 +65,7 @@ export default function Investment() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6 mb-16">
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-16">
           {plans.map((plan, i) => (
             <motion.div
               key={plan.name}
@@ -87,20 +73,8 @@ export default function Investment() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className={`relative rounded-2xl p-8 transition-all duration-500 ${
-                plan.highlight
-                  ? "border-gradient-purple glow-purple-sm"
-                  : "bento-card"
-              }`}
+              className="bento-card relative rounded-2xl p-8"
             >
-              {plan.highlight && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                  <span className="text-[10px] font-display tracking-[0.2em] bg-primary text-white px-4 py-1 rounded-full">
-                    RECOMENDADO
-                  </span>
-                </div>
-              )}
-
               <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center mb-6">
                 <plan.icon className="w-5 h-5 text-primary" />
               </div>
