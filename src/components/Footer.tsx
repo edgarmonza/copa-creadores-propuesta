@@ -22,7 +22,7 @@ export default function Footer() {
             viewport={{ once: true }}
             className="flex items-center gap-6 text-xs text-muted-foreground"
           >
-            <span>info@spectroproduction.com</span>
+            <span>andres@spec7ro.com</span>
             <span className="text-primary/30">|</span>
             <span>&copy; 2026</span>
           </motion.div>

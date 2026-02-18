@@ -165,7 +165,7 @@ export default function Investment() {
             HABLEMOS
           </a>
           <p className="text-sm text-muted-foreground">
-            info@spectroproduction.com
+            andres@spec7ro.com
           </p>
         </motion.div>
       </div>
