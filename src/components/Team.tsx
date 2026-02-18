@@ -20,11 +20,11 @@ const team = [
     role: "Monzalab — Fundador",
     image: "/team/Edgar.jpg",
     description:
-      "Background Big Four (KPMG) en gobernanza y estructuración de proyectos. Combina pensamiento estratégico con ejecución técnica: páginas web inmersivas, automatización con agentes de IA y experiencias digitales que no parecen de este mercado.",
+      "Especialista en experiencias digitales para marcas de nicho y lujo. Construye páginas web inmersivas, automatización con agentes de IA y experiencias digitales que no parecen de este mercado. Ejecución directa, sin intermediarios.",
     strengths: [
-      "Experiencias digitales inmersivas",
+      "Experiencias digitales de nicho y lujo",
       "Automatización e inteligencia artificial",
-      "Estructuración de proyectos (Big Four)",
+      "Páginas web inmersivas de alto impacto",
       "Ejecución directa, cero delegación",
     ],
   },
