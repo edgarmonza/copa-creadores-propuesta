@@ -24,7 +24,7 @@ const contentMoments = [
     phase: "MOMENTO 3",
     title: "WESTCOLL LIVE",
     description:
-      "Ronaldinho va al canal de Westcoll en vivo. Cuentan del partido, abren boleterìa en vivo. Primer pico masivo de ventas.",
+      "Ronaldinho va al canal de Westcol en vivo. Cuentan del partido, abren boleterìa en vivo. Primer pico masivo de ventas.",
     timing: "Semana 4",
   },
   {
