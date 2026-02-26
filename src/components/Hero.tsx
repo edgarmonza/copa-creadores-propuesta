@@ -44,7 +44,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <h1 className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl leading-[0.9] mb-4">
+          <h1 className="font-display text-4xl sm:text-6xl md:text-8xl lg:text-9xl leading-[0.9] mb-4">
             <span className="text-foreground">COPA DE</span>
             <br />
             <span className="text-gradient-purple">CREADORES</span>
@@ -65,7 +65,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1 }}
-          className="font-display text-2xl sm:text-3xl md:text-4xl tracking-[0.1em] text-muted-foreground mb-8"
+          className="font-display text-lg sm:text-2xl md:text-4xl tracking-[0.05em] sm:tracking-[0.1em] text-muted-foreground mb-8"
         >
           SELECCIÓN CREADORES <span className="text-gradient-purple">VS</span> COLOMBIA ALL STARS
         </motion.h2>
@@ -75,12 +75,12 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1.2 }}
-          className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground font-display tracking-wider mb-12"
+          className="flex flex-wrap justify-center gap-2 sm:gap-4 md:gap-6 text-xs sm:text-sm text-muted-foreground font-display tracking-wider mb-12"
         >
           <span>9 DE MAYO 2026</span>
-          <span className="text-primary/50">|</span>
+          <span className="hidden sm:inline text-primary/50">|</span>
           <span>ESTADIO EL CAMPÍN</span>
-          <span className="text-primary/50">|</span>
+          <span className="hidden sm:inline text-primary/50">|</span>
           <span>BOGOTÁ, COLOMBIA</span>
         </motion.div>
 
@@ -89,9 +89,9 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.4 }}
-          className="font-accent text-lg md:text-xl text-primary-glow/80 mb-12"
+          className="font-accent text-base sm:text-lg md:text-xl text-primary-glow/80 mb-12"
         >
-          Propuesta de Comunicación Digital
+          Propuesta de Comunicación Digital & Experiencia
         </motion.p>
 
         {/* CTA */}

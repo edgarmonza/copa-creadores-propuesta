@@ -17,15 +17,15 @@ const team = [
   },
   {
     name: "EDGAR NAVARRO",
-    role: "Monzalab — Fundador",
+    role: "Monzalab — Fundador · Co-founder Bavarian Econs",
     image: "/team/Edgar.jpg",
     description:
-      "Especialista en experiencias digitales para marcas de nicho y lujo. Construye páginas web inmersivas, automatización con agentes de IA y experiencias digitales que no parecen de este mercado. Ejecución directa, sin intermediarios.",
+      "Empresario y builder digital. Co-founder de Bavarian Econs (Alemania), creador de Monza Cars — una plataforma de inteligencia automotriz tipo Bloomberg — y fundador de Monza Lab. Background en analítica de datos en Nielsen, donde creó productos de data para empresas de consumo masivo. Hoy construye plataformas propias con IA y se asocia a proyectos donde puede aportar como dueño, no como proveedor.",
     strengths: [
-      "Experiencias digitales de nicho y lujo",
-      "Automatización e inteligencia artificial",
-      "Páginas web inmersivas de alto impacto",
-      "Ejecución directa, cero delegación",
+      "Co-founder de empresas en Alemania y LATAM",
+      "Plataformas full-stack, APIs y productos de data",
+      "Automatización e inteligencia artificial aplicada",
+      "Experiencias digitales premium de alto impacto",
     ],
   },
 ];
@@ -43,7 +43,7 @@ export default function Team() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[0.95] mb-6">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[0.95] mb-6">
             NO SOMOS PROVEEDORES
             <br />
             <span className="text-gradient-purple">SOMOS SOCIOS</span>
@@ -53,7 +53,7 @@ export default function Team() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-16">
           {team.map((member, i) => (
             <motion.div
               key={member.name}
@@ -64,7 +64,7 @@ export default function Team() {
               className="border-gradient-purple rounded-2xl overflow-hidden"
             >
               {/* Photo with purple tint */}
-              <div className="relative aspect-[4/5] overflow-hidden">
+              <div className="relative aspect-square sm:aspect-[4/5] overflow-hidden">
                 <div className="absolute inset-0 bg-[hsl(263_70%_50%/0.15)] mix-blend-color z-[1]" />
                 <img
                   src={member.image}

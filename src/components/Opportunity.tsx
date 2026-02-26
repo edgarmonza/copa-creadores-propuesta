@@ -51,14 +51,14 @@ export default function Opportunity() {
       <div className="container mx-auto px-6">
         <SectionLabel number="01" title="THE OPPORTUNITY" />
 
-        <div className="grid lg:grid-cols-2 gap-16 mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 mb-20">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[0.95] mb-6">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[0.95] mb-6">
               CREADORES
               <br />
               <span className="text-gradient-purple">VS LEYENDAS</span>
@@ -67,7 +67,7 @@ export default function Opportunity() {
               La Selección Colombia de Creadores de Contenido se enfrenta al equipo Colombia All Stars liderado por Ronaldinho, con leyendas del fútbol colombiano. Un evento que cruza entretenimiento, fútbol y cultura digital en un solo escenario.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Con transmisión por ESPN, El Campín como sede y una audiencia digital masiva, la Copa de Creadores es el espectáculo deportivo donde el contenido se convierte en boletas vendidas.
+              Con transmisión por ESPN, El Campín como sede y una audiencia digital masiva, la Copa de Creadores no es solo un evento — es un formato diseñado para replicarse en toda Latinoamérica.
             </p>
           </motion.div>
 
@@ -104,7 +104,7 @@ export default function Opportunity() {
         </div>
 
         {/* Teams grid */}
-        <div className="grid md:grid-cols-2 gap-6 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-20">
           {/* Selección Creadores */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -210,7 +210,7 @@ export default function Opportunity() {
               TIENEN EL TALENTO, EL ESTADIO Y LA TRANSMISIÓN
             </h3>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Les falta el motor digital que llene esas 40,000 sillas, que convierta cada pieza de contenido en una boleta vendida y que escale este formato a toda Latinoamérica.
+              Les falta el motor digital y la experiencia que llene esas 40,000 sillas, que haga del evento algo inolvidable, y que construya un formato tan poderoso que se replique en toda Latinoamérica.
             </p>
           </div>
         </motion.div>
@@ -225,7 +225,7 @@ export default function Opportunity() {
           <p className="text-center text-sm text-muted-foreground font-display tracking-wider mb-8">
             RESULTADOS DEL PRIMER EVENTO — 2025
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
             {stats.map((stat, i) => (
               <StatCard key={stat.label} {...stat} delay={i * 0.1} />
             ))}

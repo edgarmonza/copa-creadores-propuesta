@@ -1,26 +1,52 @@
 import { motion } from "framer-motion";
 import SectionLabel from "./SectionLabel";
-import { Rocket, TrendingUp } from "lucide-react";
+import { Crown, Rocket, TrendingUp } from "lucide-react";
 
 const plans = [
+  {
+    icon: Crown,
+    name: "360° PARTNER",
+    price: "USD $60,000",
+    description: "De principio a fin. Producción, experiencia digital y gestión de medios con nuestro partner estratégico.",
+    features: [
+      "Landing page inmersiva con experiencia personalizada",
+      "Estrategia de contenido (4 momentos clave)",
+      "Dirección creativa y producción audiovisual*",
+      "Base de datos centralizada de leads (landing + WhatsApp + boletería)",
+      "Flujos automatizados WhatsApp (bienvenida, post-compra, recordatorios)",
+      "Pixel tracking instalado (Meta, Google, TikTok) para retargeting",
+      "Dashboard de métricas de campaña para sponsors",
+      "Estrategia de patrocinadores digitales",
+      "Branding digital completo del evento",
+      "Gestión con portafolio Spectro de atletas",
+    ],
+    extraLabel: "MEDIOS & DIFUSIÓN",
+    extras: [
+      "Gestión de pauta publicitaria con partner de medios (Meta, Google, TikTok)",
+      "Community management del evento",
+      "Coordinación integral de campaña de difusión",
+      "Optimización de ad spend en tiempo real",
+      "Exclusividad como socios de comunicación",
+    ],
+    highlight: true,
+    revenue: "Comisión por patrocinadores gestionados por Spectro",
+  },
   {
     icon: Rocket,
     name: "FULL STACK PARTNER",
     price: "USD $50,000",
-    description: "Socios estratégicos de comunicación. Ejecución total con visión de escalar el formato en LATAM.",
+    description: "Producción, experiencia digital y estrategia. Nosotros creamos, ustedes amplifican.",
     features: [
-      "Landing page inmersiva del evento",
+      "Landing page inmersiva con experiencia personalizada",
       "Estrategia de contenido (4 momentos clave)",
       "Dirección creativa y producción audiovisual*",
-      "Estrategia de campaña de retargeting multi-canal",
-      "Flujo automatizado WhatsApp post-compra",
-      "Reporte de métricas de campaña",
+      "Base de datos centralizada de leads (landing + WhatsApp + boletería)",
+      "Flujos automatizados WhatsApp (bienvenida, post-compra, recordatorios)",
+      "Pixel tracking instalado (Meta, Google, TikTok) para retargeting",
+      "Dashboard de métricas de campaña para sponsors",
       "Estrategia de patrocinadores digitales",
       "Branding digital completo del evento",
-      "Experiencia de compra temática avanzada",
       "Gestión con portafolio Spectro de atletas",
-      "Comisión sobre marcas y patrocinadores gestionados",
-      "Exclusividad como socios de comunicación",
     ],
     highlight: false,
     revenue: "Comisión por patrocinadores gestionados por Spectro",
@@ -31,17 +57,17 @@ const plans = [
     price: "USD $15,000",
     description: "Inversión base + participación en el éxito. Comprometidos con escalar juntos en LATAM.",
     features: [
-      "Landing page del evento",
+      "Landing page del evento con experiencia personalizada",
       "Estrategia de contenido base",
       "Dirección creativa audiovisual*",
-      "Estrategia de campaña digital",
-      "Flujo WhatsApp post-compra",
-      "Soporte pre-evento",
-      "Comisión sobre marcas y patrocinadores gestionados",
+      "Flujo automatizado WhatsApp post-compra",
+      "Base de datos de leads centralizada",
+      "Pixel tracking instalado para retargeting",
+      "Soporte y optimización pre-evento",
       "Alineados con el resultado",
     ],
     highlight: false,
-    revenue: "10-15% del revenue de boletería + comisión por patrocinadores gestionados",
+    revenue: "10–15% del revenue de boletería + comisión por patrocinadores gestionados",
   },
 ];
 
@@ -58,17 +84,17 @@ export default function Investment() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[0.95] mb-6">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[0.95] mb-6">
             PARTNERS DEL EVENTO
             <br />
             <span className="text-gradient-purple">Y DE LATAM</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
-            No somos proveedores de un evento. Somos los socios comprometidos con llevar este formato a toda Latinoamérica. Dos formas de empezar juntos.
+            No somos proveedores de un evento. Somos los socios comprometidos con llevar este formato a toda Latinoamérica. Tres formas de empezar juntos.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto mb-16">
           {plans.map((plan, i) => (
             <motion.div
               key={plan.name}
@@ -76,8 +102,20 @@ export default function Investment() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="bento-card relative rounded-2xl p-8"
+              className={`bento-card relative rounded-2xl p-8 ${
+                plan.highlight
+                  ? "border-primary/40 shadow-[0_0_30px_-5px_hsl(263_70%_50%/0.15)]"
+                  : ""
+              }`}
             >
+              {plan.highlight && (
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                  <span className="bg-primary text-white text-[10px] font-display tracking-[0.2em] px-4 py-1 rounded-full">
+                    RECOMENDADO
+                  </span>
+                </div>
+              )}
+
               <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center mb-6">
                 <plan.icon className="w-5 h-5 text-primary" />
               </div>
@@ -105,6 +143,22 @@ export default function Investment() {
                   </div>
                 ))}
               </div>
+
+              {plan.extras && (
+                <div className="mt-6 pt-6 border-t border-primary/20">
+                  <p className="text-[10px] font-display tracking-[0.2em] text-primary/70 mb-4">
+                    {plan.extraLabel}
+                  </p>
+                  <div className="space-y-3">
+                    {plan.extras.map((f) => (
+                      <div key={f} className="flex items-start gap-3">
+                        <div className="w-1 h-1 rounded-full bg-primary mt-2 flex-shrink-0" />
+                        <span className="text-sm text-foreground/70">{f}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
             </motion.div>
           ))}
         </div>
@@ -118,7 +172,7 @@ export default function Investment() {
           className="text-center mb-16 space-y-4"
         >
           <p className="text-xs text-muted-foreground/60 max-w-xl mx-auto">
-            *La producción audiovisual está sujeta a la disponibilidad y acceso al talento (jugadores, creadores) que los organizadores faciliten. El ad spend (pauta publicitaria) no está incluido en ningún plan.
+            *La producción audiovisual está sujeta a la disponibilidad y acceso al talento (jugadores, creadores) que los organizadores faciliten. El ad spend (pauta publicitaria) está incluido únicamente en el plan 360° Partner.
           </p>
           <p className="text-sm text-muted-foreground max-w-xl mx-auto">
             Estamos abiertos a negociación. Esta es una primera propuesta — Bogotá es solo el primer capítulo de algo más grande en toda Latinoamérica.

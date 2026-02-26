@@ -8,7 +8,10 @@ const included = [
   "Diseño de experiencia de compra temática (Selección Creadores vs Colombia All Stars)",
   "Estrategia de campaña de retargeting multi-canal (Meta, Google, TikTok)",
   "Flujo automatizado WhatsApp post-compra (confirmación + info del evento)",
-  "Reporte consolidado de métricas de campaña para sponsors",
+  "Base de datos centralizada de leads (landing + WhatsApp + boletería)",
+  "Pixel tracking multi-plataforma (Meta, Google, TikTok) listo para retargeting",
+  "Dashboard de métricas en tiempo real para sponsors",
+  "Integración con plataforma de boletería (widget)",
   "Dirección creativa y producción audiovisual (sujeto a acceso al talento)",
   "Gestión con portafolio Spectro de atletas para sumar jugadores al evento",
   "Asesoría en estrategia de lanzamiento",
@@ -16,10 +19,10 @@ const included = [
 ];
 
 const excluded = [
-  "Pauta publicitaria (ad spend) — se cotiza aparte según objetivo",
+  "Pauta publicitaria (ad spend) — incluida solo en plan 360°, se cotiza aparte en otros planes",
+  "Community management — incluido solo en plan 360°, se cotiza aparte en otros planes",
   "Producción del evento en sí (logística, tarima, sonido, transmisión)",
   "Confirmación de jugadores — gestionamos con nuestro portafolio de atletas, pero la participación depende de cada jugador",
-  "Manejo continuo de redes sociales del evento (se puede cotizar adicional)",
   "Coordinación de agendas y disponibilidad del talento para filmación",
   "Desarrollo o integración de pasarela de pagos / ticketera",
   "Campañas de relaciones públicas o prensa tradicional",
@@ -38,7 +41,7 @@ export default function Deliverables() {
           transition={{ duration: 0.6 }}
           className="mb-16"
         >
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[0.95] mb-6">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[0.95] mb-6">
             QUÉ RECIBEN
             <br />
             <span className="text-gradient-purple">EXACTAMENTE</span>
@@ -48,16 +51,16 @@ export default function Deliverables() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
           {/* Included */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bento-card p-8"
+            className="bento-card p-5 sm:p-8"
           >
-            <div className="flex items-center gap-3 mb-8">
+            <div className="flex items-center gap-3 mb-6 sm:mb-8">
               <div className="w-8 h-8 rounded-full bg-green-500/10 border border-green-500/30 flex items-center justify-center">
                 <Check className="w-4 h-4 text-green-400" />
               </div>
@@ -86,9 +89,9 @@ export default function Deliverables() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bento-card p-8"
+            className="bento-card p-5 sm:p-8"
           >
-            <div className="flex items-center gap-3 mb-8">
+            <div className="flex items-center gap-3 mb-6 sm:mb-8">
               <div className="w-8 h-8 rounded-full bg-red-500/10 border border-red-500/30 flex items-center justify-center">
                 <X className="w-4 h-4 text-red-400" />
               </div>

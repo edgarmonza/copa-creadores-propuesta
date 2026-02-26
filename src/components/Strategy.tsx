@@ -40,21 +40,21 @@ const contentMoments = [
 const digitalFunnel = [
   {
     icon: ShoppingCart,
-    title: "Landing de compra temática",
+    title: "Landing inmersiva del evento",
     description:
-      "Página de aterrizaje del evento con la experiencia Selección Creadores vs Colombia All Stars. Diseño inmersivo que dirige al flujo de compra de boletas.",
+      "Experiencia digital Selección Creadores vs Colombia All Stars. Diseño que sumerge al fan en el evento desde el primer click y lo lleva a la compra.",
   },
   {
     icon: MessageCircle,
     title: "Flujo WhatsApp post-compra",
     description:
-      "Mensaje automatizado de confirmación después de la compra con información del evento, fecha, ubicación y equipo seleccionado.",
+      "Mensaje automatizado de confirmación con información del evento, fecha, ubicación y equipo seleccionado. La experiencia empieza antes del estadio.",
   },
   {
     icon: Target,
-    title: "Reporte de métricas para sponsors",
+    title: "Dashboard de métricas para sponsors",
     description:
-      "Reporte consolidado de métricas clave para patrocinadores: alcance de campaña, engagement por canal y rendimiento de contenido.",
+      "Métricas en tiempo real para patrocinadores: alcance, engagement por canal y rendimiento. Datos que validan el formato para futuras ediciones.",
   },
 ];
 
@@ -71,13 +71,13 @@ export default function Strategy() {
           transition={{ duration: 0.6 }}
           className="mb-16"
         >
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[0.95] mb-6">
-            CONTENIDO QUE VENDE
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[0.95] mb-6">
+            ESTRATEGIA QUE LLENA
             <br />
-            <span className="text-gradient-purple">BOLETAS</span>
+            <span className="text-gradient-purple">ESTADIOS</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl leading-relaxed">
-            Cada pieza de contenido está diseñada con un único objetivo: llenar El Campín. No hacemos contenido bonito que no convierte. Hacemos contenido que genera urgencia de compra.
+            No solo vendemos boletas — creamos una experiencia que la gente quiere vivir y compartir. Cada pieza de contenido y cada touchpoint digital está diseñado para llenar El Campín y construir un formato replicable en toda Latinoamérica.
           </p>
         </motion.div>
 
@@ -94,7 +94,7 @@ export default function Strategy() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="flex gap-6 md:ml-0"
+                className="flex gap-3 sm:gap-6 md:ml-0"
               >
                 <div className="relative flex-shrink-0">
                   <div className="w-10 h-10 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center">
@@ -130,9 +130,9 @@ export default function Strategy() {
           transition={{ duration: 0.5 }}
         >
           <p className="text-center text-sm text-muted-foreground font-display tracking-wider mb-8">
-            LA BAJADA DIGITAL
+            LA EXPERIENCIA DIGITAL
           </p>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
             {digitalFunnel.map((item, i) => (
               <motion.div
                 key={item.title}
